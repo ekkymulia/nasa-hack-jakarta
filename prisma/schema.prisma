@@ -1,0 +1,46 @@
+// Prisma Schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Country model to represent countries
+model Country {
+  id               String          @id @default(auto()) @map("_id") @db.ObjectId
+  countryName      String
+  countryFlag      String
+  gdpValue         Int
+  gdpGrowth        Float
+  carbonEmission   Float
+  currentYear      Int
+  currentMonth     Int
+  countryModifier   Json?           // Updated to use Json type for modifiers
+  newsReport        Json?           // Updated to use Json type for news reports
+
+  roomParticipants RoomParticipants[]
+}
+
+// Model for room participants
+model RoomParticipants {
+  id              String  @id @default(auto()) @map("_id") @db.ObjectId
+  username        String
+  participants_at String
+  play_as         Country? @relation(fields: [countryId], references: [id])
+  countryId       String?  @db.ObjectId
+  
+  // Added relation to Room
+  roomId          String  @db.ObjectId
+  room            Room    @relation("RoomParticipantsInRoom", fields: [roomId], references: [id])
+}
+
+// Model for room
+model Room {
+  id            String             @id @default(auto()) @map("_id") @db.ObjectId
+  room_code     String
+  participants  RoomParticipants[] @relation("RoomParticipantsInRoom")
+}

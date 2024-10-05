@@ -23,7 +23,7 @@ const ChangeView = ({ position, zoom }) => {
   return null;
 };
 
-export default function CustomMap() {
+export default function CustomMap({ mapData }) {
   const [position, setPosition] = useState(countryCoordinates['usa']); // Default to USA coordinates
   const [zoom, setZoom] = useState(5); // Set an appropriate zoom level
   const [selectedCountry, setSelectedCountry] = useState('USA'); // Default country text
@@ -137,10 +137,10 @@ export default function CustomMap() {
                         <div>
                         <div className="flex gap-4 text-3xl">
                                     {/* Country flag */}
-                            🇺🇸
+                            {mapData && mapData.countryFlag}
 
                             {/* Country name */}
-                            <h2>Amerika</h2>
+                            <h2>{mapData && mapData.countryName}</h2>
                         </div>
                         </div>
                     </div>
@@ -149,21 +149,21 @@ export default function CustomMap() {
                         <div className="flex gap-4">
                             <div className="flex gap-3">
                                 <h3>GDP</h3>
-                                <h3>$25,440,000,000,000</h3>
+                                <h3>${mapData && mapData.gdpValue}</h3>
                             </div>
                             <div className="flex gap-3">
                                 <h3>GDP Growth</h3>
-                                <h3>1.9%</h3>
+                                <h3>{mapData && mapData.gdpGrowth}%</h3>
                             </div>
                             <div className="flex gap-3">
                                 <h3>Carbon Emission</h3>
-                                <h3>1.9%</h3>
+                                <h3>{mapData && mapData.carbonEmission}%</h3>
                             </div>
                         </div>
                         <div>
                             <div className="flex gap-3">
                                 <h3>Current Date</h3>
-                                <h3>2023.01</h3>
+                                <h3>{mapData && mapData.currentYear}.{mapData && mapData.currentMonth}</h3>
                             </div>
                         </div>
 

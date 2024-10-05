@@ -1,0 +1,82 @@
+// Prisma Schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Main model for globe protocol data
+model GlobeProtocolData {
+  id       String       @id @default(auto()) @map("_id") @db.ObjectId
+  latLng   String
+  data     GlobeData[]  @relation("GlobeDataForProtocol")
+}
+
+// Model for various globe data entries
+model GlobeData {
+  id              String            @id @default(auto()) @map("_id") @db.ObjectId
+  globeProtocolId String            @db.ObjectId
+  globeProtocol   GlobeProtocolData @relation("GlobeDataForProtocol", fields: [globeProtocolId], references: [id])
+  protocol        String            // e.g., "pedosphere", "atmospheric"
+  protocolData    ProtocolData[]    @relation("ProtocolDataForGlobeData")
+  
+  // Added relation to Country
+  countryId       String            @db.ObjectId
+  country         Country           @relation("CountryNasaGlobeData", fields: [countryId], references: [id])
+}
+
+// Protocol data structure holding item-value pairs
+model ProtocolData {
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId
+  globeDataId  String       @db.ObjectId
+  globeData    GlobeData    @relation("ProtocolDataForGlobeData", fields: [globeDataId], references: [id])
+  item         String       // e.g., "soil_temp", "humidity"
+  values       Value[]      @relation("ValueForProtocolData")
+}
+
+// Model to hold date-value pairs for each item
+model Value {
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId
+  protocolDataId String     @db.ObjectId
+  protocolData   ProtocolData @relation("ValueForProtocolData", fields: [protocolDataId], references: [id])
+  date         String
+  value        Float        // Value associated with the date
+}
+
+// Country model to represent countries
+model Country {
+  id              String         @id @default(auto()) @map("_id") @db.ObjectId
+  countryName     String
+  countryFlag     String
+  gdpValue        Int
+  gdpGrowth       Float
+  carbonEmission  Float
+  nasaGlobeData   GlobeData[]    @relation("CountryNasaGlobeData")
+  
+  // Added relation to RoomParticipants
+  roomParticipants RoomParticipants[]
+}
+
+// Model for room participants
+model RoomParticipants {
+  id              String  @id @default(auto()) @map("_id") @db.ObjectId
+  username        String
+  participants_at String
+  play_as         Country? @relation(fields: [countryId], references: [id])
+  countryId       String  @db.ObjectId
+  
+  // Added relation to Room
+  roomId          String  @db.ObjectId
+  room            Room    @relation("RoomParticipantsInRoom", fields: [roomId], references: [id])
+}
+
+// Model for room
+model Room {
+  id            String             @id @default(auto()) @map("_id") @db.ObjectId
+  room_code     String
+  participants  RoomParticipants[] @relation("RoomParticipantsInRoom")
+}

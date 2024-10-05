@@ -1,0 +1,11 @@
+[
+    {
+        "countryName": "USA",
+        "countryFlag": "🇺🇸",
+        "gdpValue": 24000000000000,
+        "gdpGrowth": 1.9,
+        "carbonEmission": 20.0,
+        "countryModifier": [],
+        "newsReport": []
+    }
+]
