@@ -1,575 +1,575 @@
-{
-    "countryName": "USA",
-    "countryFlag": "🇺🇸",
-    "gdpValue": 24000000000000,
-    "gdpGrowth": 1.9,
-    "carbonEmission": 20.0,
-    "data_nasa_globe": [
-      {
-        "latLng": "40.7128,-74.0060",
-        "data": [
-          {
-            "protocol": "pedosphere",
-            "protocol_data": [
-              {
-                "item": "Soil Temperature Dailies",
-                "value": [
-                  { "date": "2024.01", "value": "15°C" },
-                  { "date": "2024.02", "value": "16°C" },
-                  { "date": "2024.03", "value": "18°C" },
-                  { "date": "2024.04", "value": "20°C" },
-                  { "date": "2024.05", "value": "22°C" },
-                  { "date": "2024.06", "value": "25°C" },
-                  { "date": "2024.07", "value": "28°C" },
-                  { "date": "2024.08", "value": "27°C" },
-                  { "date": "2024.09", "value": "23°C" },
-                  { "date": "2024.10", "value": "19°C" }
-                ]
-              },
-              {
-                "item": "Soil Temperature Monthlies",
-                "value": [
-                  { "date": "2024.01", "value": "14°C" },
-                  { "date": "2024.02", "value": "15°C" },
-                  { "date": "2024.03", "value": "17°C" },
-                  { "date": "2024.04", "value": "19°C" },
-                  { "date": "2024.05", "value": "21°C" },
-                  { "date": "2024.06", "value": "24°C" },
-                  { "date": "2024.07", "value": "27°C" },
-                  { "date": "2024.08", "value": "26°C" },
-                  { "date": "2024.09", "value": "22°C" },
-                  { "date": "2024.10", "value": "18°C" }
-                ]
-              },
-              {
-                "item": "Soil Temperature Noons",
-                "value": [
-                  { "date": "2024.01", "value": "16°C" },
-                  { "date": "2024.02", "value": "17°C" },
-                  { "date": "2024.03", "value": "19°C" },
-                  { "date": "2024.04", "value": "21°C" },
-                  { "date": "2024.05", "value": "23°C" },
-                  { "date": "2024.06", "value": "26°C" },
-                  { "date": "2024.07", "value": "29°C" },
-                  { "date": "2024.08", "value": "28°C" },
-                  { "date": "2024.09", "value": "24°C" },
-                  { "date": "2024.10", "value": "20°C" }
-                ]
-              },
-              {
-                "item": "Soil Moisture - Gravimetric",
-                "value": [
-                  { "date": "2024.01", "value": "30%" },
-                  { "date": "2024.02", "value": "32%" },
-                  { "date": "2024.03", "value": "35%" },
-                  { "date": "2024.04", "value": "40%" },
-                  { "date": "2024.05", "value": "45%" },
-                  { "date": "2024.06", "value": "50%" },
-                  { "date": "2024.07", "value": "48%" },
-                  { "date": "2024.08", "value": "46%" },
-                  { "date": "2024.09", "value": "42%" },
-                  { "date": "2024.10", "value": "38%" }
-                ]
-              },
-              {
-                "item": "Volumetric Soil Moisture - Monthlies",
-                "value": [
-                  { "date": "2024.01", "value": "25%" },
-                  { "date": "2024.02", "value": "27%" },
-                  { "date": "2024.03", "value": "30%" },
-                  { "date": "2024.04", "value": "35%" },
-                  { "date": "2024.05", "value": "40%" },
-                  { "date": "2024.06", "value": "45%" },
-                  { "date": "2024.07", "value": "43%" },
-                  { "date": "2024.08", "value": "41%" },
-                  { "date": "2024.09", "value": "37%" },
-                  { "date": "2024.10", "value": "33%" }
-                ]
-              },
-              {
-                "item": "Frost Tube",
-                "value": [
-                  { "date": "2024.01", "value": "Yes" },
-                  { "date": "2024.02", "value": "Yes" },
-                  { "date": "2024.03", "value": "No" },
-                  { "date": "2024.04", "value": "No" },
-                  { "date": "2024.05", "value": "No" },
-                  { "date": "2024.06", "value": "No" },
-                  { "date": "2024.07", "value": "No" },
-                  { "date": "2024.08", "value": "No" },
-                  { "date": "2024.09", "value": "No" },
-                  { "date": "2024.10", "value": "No" }
-                ]
-              },
-              {
-                "item": "Soil pH",
-                "value": [
-                  { "date": "2024.01", "value": "6.5" },
-                  { "date": "2024.02", "value": "6.6" },
-                  { "date": "2024.03", "value": "6.7" },
-                  { "date": "2024.04", "value": "6.8" },
-                  { "date": "2024.05", "value": "6.9" },
-                  { "date": "2024.06", "value": "7.0" },
-                  { "date": "2024.07", "value": "7.1" },
-                  { "date": "2024.08", "value": "7.0" },
-                  { "date": "2024.09", "value": "6.9" },
-                  { "date": "2024.10", "value": "6.8" }
-                ]
-              },
-              {
-                "item": "Soil Fertility",
-                "value": [
-                  { "date": "2024.01", "value": "High" },
-                  { "date": "2024.02", "value": "High" },
-                  { "date": "2024.03", "value": "Medium" },
-                  { "date": "2024.04", "value": "Medium" },
-                  { "date": "2024.05", "value": "Medium" },
-                  { "date": "2024.06", "value": "Low" },
-                  { "date": "2024.07", "value": "Low" },
-                  { "date": "2024.08", "value": "Low" },
-                  { "date": "2024.09", "value": "Medium" },
-                  { "date": "2024.10", "value": "Medium" }
-                ]
-              },
-              {
-                "item": "Particle Size Distribution",
-                "value": [
-                  { "date": "2024.01", "value": "Sand: 70%, Silt: 20%, Clay: 10%" },
-                  { "date": "2024.02", "value": "Sand: 68%, Silt: 22%, Clay: 10%" },
-                  { "date": "2024.03", "value": "Sand: 65%, Silt: 25%, Clay: 10%" },
-                  { "date": "2024.04", "value": "Sand: 60%, Silt: 30%, Clay: 10%" },
-                  { "date": "2024.05", "value": "Sand: 55%, Silt: 35%, Clay: 10%" },
-                  { "date": "2024.06", "value": "Sand: 50%, Silt: 40%, Clay: 10%" },
-                  { "date": "2024.07", "value": "Sand: 52%, Silt: 38%, Clay: 10%" },
-                  { "date": "2024.08", "value": "Sand: 54%, Silt: 36%, Clay: 10%" },
-                  { "date": "2024.09", "value": "Sand: 56%, Silt: 34%, Clay: 10%" },
-                  { "date": "2024.10", "value": "Sand: 58%, Silt: 32%, Clay: 10%" }
-                ]
-              },
-              {
-                "item": "Soil Infiltrations",
-                "value": [
-                  { "date": "2024.01", "value": "Good" },
-                  { "date": "2024.02", "value": "Good" },
-                  { "date": "2024.03", "value": "Fair" },
-                  { "date": "2024.04", "value": "Fair" },
-                  { "date": "2024.05", "value": "Poor" },
-                  { "date": "2024.06", "value": "Poor" },
-                  { "date": "2024.07", "value": "Poor" },
-                  { "date": "2024.08", "value": "Fair" },
-                  { "date": "2024.09", "value": "Fair" },
-                  { "date": "2024.10", "value": "Good" }
-                ]
-              }
-            ]
-          },
-          {
-            "protocol": "atmospheric",
-            "protocol_data": [
-              {
-                "item": "Air Temperature Dailies",
-                "value": [
-                  { "date": "2024.01", "value": "5°C" },
-                  { "date": "2024.02", "value": "6°C" },
-                  { "date": "2024.03", "value": "10°C" },
-                  { "date": "2024.04", "value": "15°C" },
-                  { "date": "2024.05", "value": "20°C" },
-                  { "date": "2024.06", "value": "25°C" },
-                  { "date": "2024.07", "value": "30°C" },
-                  { "date": "2024.08", "value": "29°C" },
-                  { "date": "2024.09", "value": "22°C" },
-                  { "date": "2024.10", "value": "16°C" }
-                ]
-              },
-              {
-                "item": "Aerosols",
-                "value": [
-                  { "date": "2024.01", "value": "Low" },
-                  { "date": "2024.02", "value": "Low" },
-                  { "date": "2024.03", "value": "Medium" },
-                  { "date": "2024.04", "value": "Medium" },
-                  { "date": "2024.05", "value": "High" },
-                  { "date": "2024.06", "value": "High" },
-                  { "date": "2024.07", "value": "Very High" },
-                  { "date": "2024.08", "value": "High" },
-                  { "date": "2024.09", "value": "Medium" },
-                  { "date": "2024.10", "value": "Low" }
-                ]
-              },
-              {
-                "item": "Barometric Pressures",
-                "value": [
-                  { "date": "2024.01", "value": "1015 hPa" },
-                  { "date": "2024.02", "value": "1013 hPa" },
-                  { "date": "2024.03", "value": "1012 hPa" },
-                  { "date": "2024.04", "value": "1014 hPa" },
-                  { "date": "2024.05", "value": "1016 hPa" },
-                  { "date": "2024.06", "value": "1018 hPa" },
-                  { "date": "2024.07", "value": "1017 hPa" },
-                  { "date": "2024.08", "value": "1015 hPa" },
-                  { "date": "2024.09", "value": "1013 hPa" },
-                  { "date": "2024.10", "value": "1014 hPa" }
-                ]
-              },
-              {
-                "item": "Barometric Pressure Noons",
-                "value": [
-                  { "date": "2024.01", "value": "1016 hPa" },
-                  { "date": "2024.02", "value": "1014 hPa" },
-                  { "date": "2024.03", "value": "1013 hPa" },
-                  { "date": "2024.04", "value": "1015 hPa" },
-                  { "date": "2024.05", "value": "1017 hPa" },
-                  { "date": "2024.06", "value": "1019 hPa" },
-                  { "date": "2024.07", "value": "1018 hPa" },
-                  { "date": "2024.08", "value": "1016 hPa" },
-                  { "date": "2024.09", "value": "1014 hPa" },
-                  { "date": "2024.10", "value": "1015 hPa" }
-                ]
-              },
-              {
-                "item": "Clouds",
-                "value": [
-                  { "date": "2024.01", "value": "Overcast" },
-                  { "date": "2024.02", "value": "Cloudy" },
-                  { "date": "2024.03", "value": "Partly Cloudy" },
-                  { "date": "2024.04", "value": "Clear" },
-                  { "date": "2024.05", "value": "Clear" },
-                  { "date": "2024.06", "value": "Partly Cloudy" },
-                  { "date": "2024.07", "value": "Mostly Cloudy" },
-                  { "date": "2024.08", "value": "Cloudy" },
-                  { "date": "2024.09", "value": "Overcast" },
-                  { "date": "2024.10", "value": "Clear" }
-                ]
-              },
-              {
-                "item": "Clouds Noons",
-                "value": [
-                  { "date": "2024.01", "value": "Overcast" },
-                  { "date": "2024.02", "value": "Cloudy" },
-                  { "date": "2024.03", "value": "Partly Cloudy" },
-                  { "date": "2024.04", "value": "Clear" },
-                  { "date": "2024.05", "value": "Clear" },
-                  { "date": "2024.06", "value": "Partly Cloudy" },
-                  { "date": "2024.07", "value": "Mostly Cloudy" },
-                  { "date": "2024.08", "value": "Cloudy" },
-                  { "date": "2024.09", "value": "Overcast" },
-                  { "date": "2024.10", "value": "Clear" }
-                ]
-              },
-              {
-                "item": "Precipitation",
-                "value": [
-                  { "date": "2024.01", "value": "50 mm" },
-                  { "date": "2024.02", "value": "40 mm" },
-                  { "date": "2024.03", "value": "60 mm" },
-                  { "date": "2024.04", "value": "70 mm" },
-                  { "date": "2024.05", "value": "80 mm" },
-                  { "date": "2024.06", "value": "90 mm" },
-                  { "date": "2024.07", "value": "100 mm" },
-                  { "date": "2024.08", "value": "95 mm" },
-                  { "date": "2024.09", "value": "85 mm" },
-                  { "date": "2024.10", "value": "75 mm" }
-                ]
-              },
-              {
-                "item": "Precipitation Monthlies",
-                "value": [
-                  { "date": "2024.01", "value": "45 mm" },
-                  { "date": "2024.02", "value": "35 mm" },
-                  { "date": "2024.03", "value": "55 mm" },
-                  { "date": "2024.04", "value": "65 mm" },
-                  { "date": "2024.05", "value": "75 mm" },
-                  { "date": "2024.06", "value": "85 mm" },
-                  { "date": "2024.07", "value": "95 mm" },
-                  { "date": "2024.08", "value": "90 mm" },
-                  { "date": "2024.09", "value": "80 mm" },
-                  { "date": "2024.10", "value": "70 mm" }
-                ]
-              }
-            ]
-          },
-          {
-            "protocol": "biosphere",
-            "protocol_data": [
-              {
-                "item": "Graminoid Biomasses",
-                "value": [
-                  { "date": "2024.01", "value": "500 kg/ha" },
-                  { "date": "2024.02", "value": "520 kg/ha" },
-                  { "date": "2024.03", "value": "530 kg/ha" },
-                  { "date": "2024.04", "value": "540 kg/ha" },
-                  { "date": "2024.05", "value": "550 kg/ha" },
-                  { "date": "2024.06", "value": "560 kg/ha" },
-                  { "date": "2024.07", "value": "570 kg/ha" },
-                  { "date": "2024.08", "value": "580 kg/ha" },
-                  { "date": "2024.09", "value": "590 kg/ha" },
-                  { "date": "2024.10", "value": "600 kg/ha" }
-                ]
-              },
-              {
-                "item": "Biometry - Trees",
-                "value": [
-                  { "date": "2024.01", "value": "1500 trees/ha" },
-                  { "date": "2024.02", "value": "1520 trees/ha" },
-                  { "date": "2024.03", "value": "1540 trees/ha" },
-                  { "date": "2024.04", "value": "1560 trees/ha" },
-                  { "date": "2024.05", "value": "1580 trees/ha" },
-                  { "date": "2024.06", "value": "1600 trees/ha" },
-                  { "date": "2024.07", "value": "1620 trees/ha" },
-                  { "date": "2024.08", "value": "1640 trees/ha" },
-                  { "date": "2024.09", "value": "1660 trees/ha" },
-                  { "date": "2024.10", "value": "1680 trees/ha" }
-                ]
-              },
-              {
-                "item": "Biometry - Tree Heights",
-                "value": [
-                  { "date": "2024.01", "value": "10 m" },
-                  { "date": "2024.02", "value": "10.2 m" },
-                  { "date": "2024.03", "value": "10.4 m" },
-                  { "date": "2024.04", "value": "10.6 m" },
-                  { "date": "2024.05", "value": "10.8 m" },
-                  { "date": "2024.06", "value": "11 m" },
-                  { "date": "2024.07", "value": "11.2 m" },
-                  { "date": "2024.08", "value": "11.4 m" },
-                  { "date": "2024.09", "value": "11.6 m" },
-                  { "date": "2024.10", "value": "11.8 m" }
-                ]
-              },
-              {
-                "item": "Biometry - Vegetation Covers",
-                "value": [
-                  { "date": "2024.01", "value": "30%" },
-                  { "date": "2024.02", "value": "32%" },
-                  { "date": "2024.03", "value": "34%" },
-                  { "date": "2024.04", "value": "36%" },
-                  { "date": "2024.05", "value": "38%" },
-                  { "date": "2024.06", "value": "40%" },
-                  { "date": "2024.07", "value": "42%" },
-                  { "date": "2024.08", "value": "44%" },
-                  { "date": "2024.09", "value": "46%" },
-                  { "date": "2024.10", "value": "48%" }
-                ]
-              },
-              {
-                "item": "Greenings",
-                "value": [
-                  { "date": "2024.01", "value": "Low" },
-                  { "date": "2024.02", "value": "Low" },
-                  { "date": "2024.03", "value": "Medium" },
-                  { "date": "2024.04", "value": "Medium" },
-                  { "date": "2024.05", "value": "High" },
-                  { "date": "2024.06", "value": "High" },
-                  { "date": "2024.07", "value": "Very High" },
-                  { "date": "2024.08", "value": "High" },
-                  { "date": "2024.09", "value": "Medium" },
-                  { "date": "2024.10", "value": "Low" }
-                ]
-              },
-              {
-                "item": "Land Cover",
-                "value": [
-                  { "date": "2024.01", "value": "Forest: 40%" },
-                  { "date": "2024.02", "value": "Forest: 41%" },
-                  { "date": "2024.03", "value": "Forest: 42%" },
-                  { "date": "2024.04", "value": "Forest: 43%" },
-                  { "date": "2024.05", "value": "Forest: 44%" },
-                  { "date": "2024.06", "value": "Forest: 45%" },
-                  { "date": "2024.07", "value": "Forest: 46%" },
-                  { "date": "2024.08", "value": "Forest: 47%" },
-                  { "date": "2024.09", "value": "Forest: 48%" },
-                  { "date": "2024.10", "value": "Forest: 49%" }
-                ]
-              },
-              {
-                "item": "Phenological Gardens",
-                "value": [
-                  { "date": "2024.01", "value": "Dormant" },
-                  { "date": "2024.02", "value": "Dormant" },
-                  { "date": "2024.03", "value": "Budding" },
-                  { "date": "2024.04", "value": "Flowering" },
-                  { "date": "2024.05", "value": "Full Bloom" },
-                  { "date": "2024.06", "value": "Fruiting" },
-                  { "date": "2024.07", "value": "Fruiting" },
-                  { "date": "2024.08", "value": "Fruiting" },
-                  { "date": "2024.09", "value": "Fruiting" },
-                  { "date": "2024.10", "value": "Leaf Fall" }
-                ]
-              },
-              {
-                "item": "Carbon Cycle",
-                "value": [
-                  { "date": "2024.01", "value": "2000 Mg CO2/year" },
-                  { "date": "2024.02", "value": "2050 Mg CO2/year" },
-                  { "date": "2024.03", "value": "2100 Mg CO2/year" },
-                  { "date": "2024.04", "value": "2150 Mg CO2/year" },
-                  { "date": "2024.05", "value": "2200 Mg CO2/year" },
-                  { "date": "2024.06", "value": "2250 Mg CO2/year" },
-                  { "date": "2024.07", "value": "2300 Mg CO2/year" },
-                  { "date": "2024.08", "value": "2350 Mg CO2/year" },
-                  { "date": "2024.09", "value": "2400 Mg CO2/year" },
-                  { "date": "2024.10", "value": "2450 Mg CO2/year" }
-                ]
-              }
-            ]
-          },
-          {
-            "protocol": "hydrosphere",
-            "protocol_data": [
-              {
-                "item": "Alkalinity",
-                "value": [
-                  { "date": "2024.01", "value": "120 mg/L" },
-                  { "date": "2024.02", "value": "118 mg/L" },
-                  { "date": "2024.03", "value": "115 mg/L" },
-                  { "date": "2024.04", "value": "113 mg/L" },
-                  { "date": "2024.05", "value": "110 mg/L" },
-                  { "date": "2024.06", "value": "108 mg/L" },
-                  { "date": "2024.07", "value": "105 mg/L" },
-                  { "date": "2024.08", "value": "103 mg/L" },
-                  { "date": "2024.09", "value": "100 mg/L" },
-                  { "date": "2024.10", "value": "98 mg/L" }
-                ]
-              },
-              {
-                "item": "Conductivity",
-                "value": [
-                  { "date": "2024.01", "value": "500 µS/cm" },
-                  { "date": "2024.02", "value": "505 µS/cm" },
-                  { "date": "2024.03", "value": "510 µS/cm" },
-                  { "date": "2024.04", "value": "515 µS/cm" },
-                  { "date": "2024.05", "value": "520 µS/cm" },
-                  { "date": "2024.06", "value": "525 µS/cm" },
-                  { "date": "2024.07", "value": "530 µS/cm" },
-                  { "date": "2024.08", "value": "535 µS/cm" },
-                  { "date": "2024.09", "value": "540 µS/cm" },
-                  { "date": "2024.10", "value": "545 µS/cm" }
-                ]
-              },
-              {
-                "item": "Dissolved Oxygen",
-                "value": [
-                  { "date": "2024.01", "value": "8 mg/L" },
-                  { "date": "2024.02", "value": "8.2 mg/L" },
-                  { "date": "2024.03", "value": "8.4 mg/L" },
-                  { "date": "2024.04", "value": "8.6 mg/L" },
-                  { "date": "2024.05", "value": "8.8 mg/L" },
-                  { "date": "2024.06", "value": "9 mg/L" },
-                  { "date": "2024.07", "value": "9.2 mg/L" },
-                  { "date": "2024.08", "value": "9.4 mg/L" },
-                  { "date": "2024.09", "value": "9.6 mg/L" },
-                  { "date": "2024.10", "value": "9.8 mg/L" }
-                ]
-              },
-              {
-                "item": "Freshwater Macroinvertebrates",
-                "value": [
-                  { "date": "2024.01", "value": "High Diversity" },
-                  { "date": "2024.02", "value": "High Diversity" },
-                  { "date": "2024.03", "value": "Medium Diversity" },
-                  { "date": "2024.04", "value": "Medium Diversity" },
-                  { "date": "2024.05", "value": "Low Diversity" },
-                  { "date": "2024.06", "value": "Low Diversity" },
-                  { "date": "2024.07", "value": "Low Diversity" },
-                  { "date": "2024.08", "value": "Medium Diversity" },
-                  { "date": "2024.09", "value": "Medium Diversity" },
-                  { "date": "2024.10", "value": "High Diversity" }
-                ]
-              },
-              {
-                "item": "Mosquito Habitat Mapper",
-                "value": [
-                  { "date": "2024.01", "value": "Low Activity" },
-                  { "date": "2024.02", "value": "Low Activity" },
-                  { "date": "2024.03", "value": "Moderate Activity" },
-                  { "date": "2024.04", "value": "Moderate Activity" },
-                  { "date": "2024.05", "value": "High Activity" },
-                  { "date": "2024.06", "value": "High Activity" },
-                  { "date": "2024.07", "value": "Very High Activity" },
-                  { "date": "2024.08", "value": "High Activity" },
-                  { "date": "2024.09", "value": "Moderate Activity" },
-                  { "date": "2024.10", "value": "Low Activity" }
-                ]
-              },
-              {
-                "item": "Nitrates",
-                "value": [
-                  { "date": "2024.01", "value": "5 mg/L" },
-                  { "date": "2024.02", "value": "5.2 mg/L" },
-                  { "date": "2024.03", "value": "5.4 mg/L" },
-                  { "date": "2024.04", "value": "5.6 mg/L" },
-                  { "date": "2024.05", "value": "5.8 mg/L" },
-                  { "date": "2024.06", "value": "6 mg/L" },
-                  { "date": "2024.07", "value": "6.2 mg/L" },
-                  { "date": "2024.08", "value": "6.4 mg/L" },
-                  { "date": "2024.09", "value": "6.6 mg/L" },
-                  { "date": "2024.10", "value": "6.8 mg/L" }
-                ]
-              },
-              {
-                "item": "pH",
-                "value": [
-                  { "date": "2024.01", "value": "7.0" },
-                  { "date": "2024.02", "value": "7.1" },
-                  { "date": "2024.03", "value": "7.2" },
-                  { "date": "2024.04", "value": "7.3" },
-                  { "date": "2024.05", "value": "7.4" },
-                  { "date": "2024.06", "value": "7.5" },
-                  { "date": "2024.07", "value": "7.6" },
-                  { "date": "2024.08", "value": "7.5" },
-                  { "date": "2024.09", "value": "7.4" },
-                  { "date": "2024.10", "value": "7.3" }
-                ]
-              },
-              {
-                "item": "Salinity",
-                "value": [
-                  { "date": "2024.01", "value": "30 PSU" },
-                  { "date": "2024.02", "value": "31 PSU" },
-                  { "date": "2024.03", "value": "32 PSU" },
-                  { "date": "2024.04", "value": "33 PSU" },
-                  { "date": "2024.05", "value": "34 PSU" },
-                  { "date": "2024.06", "value": "35 PSU" },
-                  { "date": "2024.07", "value": "36 PSU" },
-                  { "date": "2024.08", "value": "35 PSU" },
-                  { "date": "2024.09", "value": "34 PSU" },
-                  { "date": "2024.10", "value": "33 PSU" }
-                ]
-              },
-              {
-                "item": "Water Temperature",
-                "value": [
-                  { "date": "2024.01", "value": "10°C" },
-                  { "date": "2024.02", "value": "11°C" },
-                  { "date": "2024.03", "value": "12°C" },
-                  { "date": "2024.04", "value": "14°C" },
-                  { "date": "2024.05", "value": "16°C" },
-                  { "date": "2024.06", "value": "18°C" },
-                  { "date": "2024.07", "value": "20°C" },
-                  { "date": "2024.08", "value": "19°C" },
-                  { "date": "2024.09", "value": "17°C" },
-                  { "date": "2024.10", "value": "15°C" }
-                ]
-              },
-              {
-                "item": "Water Transparency",
-                "value": [
-                  { "date": "2024.01", "value": "Clear" },
-                  { "date": "2024.02", "value": "Clear" },
-                  { "date": "2024.03", "value": "Moderate" },
-                  { "date": "2024.04", "value": "Moderate" },
-                  { "date": "2024.05", "value": "Low" },
-                  { "date": "2024.06", "value": "Low" },
-                  { "date": "2024.07", "value": "Very Low" },
-                  { "date": "2024.08", "value": "Low" },
-                  { "date": "2024.09", "value": "Moderate" },
-                  { "date": "2024.10", "value": "Clear" }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+[{
+  "countryName": "USA",
+  "countryFlag": "🇺🇸",
+  "gdpValue": 24000000000000,
+  "gdpGrowth": 1.9,
+  "carbonEmission": 20.0,
+  "data_nasa_globe": [
+    {
+      "latLng": "40.7128,-74.0060",
+      "data": [
+        {
+          "protocol": "pedosphere",
+          "protocol_data": [
+            {
+              "item": "Soil Temperature Dailies",
+              "value": [
+                { "date": "2024.01", "value": "15°C" },
+                { "date": "2024.02", "value": "16°C" },
+                { "date": "2024.03", "value": "18°C" },
+                { "date": "2024.04", "value": "20°C" },
+                { "date": "2024.05", "value": "22°C" },
+                { "date": "2024.06", "value": "25°C" },
+                { "date": "2024.07", "value": "28°C" },
+                { "date": "2024.08", "value": "27°C" },
+                { "date": "2024.09", "value": "23°C" },
+                { "date": "2024.10", "value": "19°C" }
+              ]
+            },
+            {
+              "item": "Soil Temperature Monthlies",
+              "value": [
+                { "date": "2024.01", "value": "14°C" },
+                { "date": "2024.02", "value": "15°C" },
+                { "date": "2024.03", "value": "17°C" },
+                { "date": "2024.04", "value": "19°C" },
+                { "date": "2024.05", "value": "21°C" },
+                { "date": "2024.06", "value": "24°C" },
+                { "date": "2024.07", "value": "27°C" },
+                { "date": "2024.08", "value": "26°C" },
+                { "date": "2024.09", "value": "22°C" },
+                { "date": "2024.10", "value": "18°C" }
+              ]
+            },
+            {
+              "item": "Soil Temperature Noons",
+              "value": [
+                { "date": "2024.01", "value": "16°C" },
+                { "date": "2024.02", "value": "17°C" },
+                { "date": "2024.03", "value": "19°C" },
+                { "date": "2024.04", "value": "21°C" },
+                { "date": "2024.05", "value": "23°C" },
+                { "date": "2024.06", "value": "26°C" },
+                { "date": "2024.07", "value": "29°C" },
+                { "date": "2024.08", "value": "28°C" },
+                { "date": "2024.09", "value": "24°C" },
+                { "date": "2024.10", "value": "20°C" }
+              ]
+            },
+            {
+              "item": "Soil Moisture - Gravimetric",
+              "value": [
+                { "date": "2024.01", "value": "30%" },
+                { "date": "2024.02", "value": "32%" },
+                { "date": "2024.03", "value": "35%" },
+                { "date": "2024.04", "value": "40%" },
+                { "date": "2024.05", "value": "45%" },
+                { "date": "2024.06", "value": "50%" },
+                { "date": "2024.07", "value": "48%" },
+                { "date": "2024.08", "value": "46%" },
+                { "date": "2024.09", "value": "42%" },
+                { "date": "2024.10", "value": "38%" }
+              ]
+            },
+            {
+              "item": "Volumetric Soil Moisture - Monthlies",
+              "value": [
+                { "date": "2024.01", "value": "25%" },
+                { "date": "2024.02", "value": "27%" },
+                { "date": "2024.03", "value": "30%" },
+                { "date": "2024.04", "value": "35%" },
+                { "date": "2024.05", "value": "40%" },
+                { "date": "2024.06", "value": "45%" },
+                { "date": "2024.07", "value": "43%" },
+                { "date": "2024.08", "value": "41%" },
+                { "date": "2024.09", "value": "37%" },
+                { "date": "2024.10", "value": "33%" }
+              ]
+            },
+            {
+              "item": "Frost Tube",
+              "value": [
+                { "date": "2024.01", "value": "Yes" },
+                { "date": "2024.02", "value": "Yes" },
+                { "date": "2024.03", "value": "No" },
+                { "date": "2024.04", "value": "No" },
+                { "date": "2024.05", "value": "No" },
+                { "date": "2024.06", "value": "No" },
+                { "date": "2024.07", "value": "No" },
+                { "date": "2024.08", "value": "No" },
+                { "date": "2024.09", "value": "No" },
+                { "date": "2024.10", "value": "No" }
+              ]
+            },
+            {
+              "item": "Soil pH",
+              "value": [
+                { "date": "2024.01", "value": "6.5" },
+                { "date": "2024.02", "value": "6.6" },
+                { "date": "2024.03", "value": "6.7" },
+                { "date": "2024.04", "value": "6.8" },
+                { "date": "2024.05", "value": "6.9" },
+                { "date": "2024.06", "value": "7.0" },
+                { "date": "2024.07", "value": "7.1" },
+                { "date": "2024.08", "value": "7.0" },
+                { "date": "2024.09", "value": "6.9" },
+                { "date": "2024.10", "value": "6.8" }
+              ]
+            },
+            {
+              "item": "Soil Fertility",
+              "value": [
+                { "date": "2024.01", "value": "High" },
+                { "date": "2024.02", "value": "High" },
+                { "date": "2024.03", "value": "Medium" },
+                { "date": "2024.04", "value": "Medium" },
+                { "date": "2024.05", "value": "Medium" },
+                { "date": "2024.06", "value": "Low" },
+                { "date": "2024.07", "value": "Low" },
+                { "date": "2024.08", "value": "Low" },
+                { "date": "2024.09", "value": "Medium" },
+                { "date": "2024.10", "value": "Medium" }
+              ]
+            },
+            {
+              "item": "Particle Size Distribution",
+              "value": [
+                { "date": "2024.01", "value": "Sand: 70%, Silt: 20%, Clay: 10%" },
+                { "date": "2024.02", "value": "Sand: 68%, Silt: 22%, Clay: 10%" },
+                { "date": "2024.03", "value": "Sand: 65%, Silt: 25%, Clay: 10%" },
+                { "date": "2024.04", "value": "Sand: 60%, Silt: 30%, Clay: 10%" },
+                { "date": "2024.05", "value": "Sand: 55%, Silt: 35%, Clay: 10%" },
+                { "date": "2024.06", "value": "Sand: 50%, Silt: 40%, Clay: 10%" },
+                { "date": "2024.07", "value": "Sand: 52%, Silt: 38%, Clay: 10%" },
+                { "date": "2024.08", "value": "Sand: 54%, Silt: 36%, Clay: 10%" },
+                { "date": "2024.09", "value": "Sand: 56%, Silt: 34%, Clay: 10%" },
+                { "date": "2024.10", "value": "Sand: 58%, Silt: 32%, Clay: 10%" }
+              ]
+            },
+            {
+              "item": "Soil Infiltrations",
+              "value": [
+                { "date": "2024.01", "value": "Good" },
+                { "date": "2024.02", "value": "Good" },
+                { "date": "2024.03", "value": "Fair" },
+                { "date": "2024.04", "value": "Fair" },
+                { "date": "2024.05", "value": "Poor" },
+                { "date": "2024.06", "value": "Poor" },
+                { "date": "2024.07", "value": "Poor" },
+                { "date": "2024.08", "value": "Fair" },
+                { "date": "2024.09", "value": "Fair" },
+                { "date": "2024.10", "value": "Good" }
+              ]
+            }
+          ]
+        },
+        {
+          "protocol": "atmospheric",
+          "protocol_data": [
+            {
+              "item": "Air Temperature Dailies",
+              "value": [
+                { "date": "2024.01", "value": "5°C" },
+                { "date": "2024.02", "value": "6°C" },
+                { "date": "2024.03", "value": "10°C" },
+                { "date": "2024.04", "value": "15°C" },
+                { "date": "2024.05", "value": "20°C" },
+                { "date": "2024.06", "value": "25°C" },
+                { "date": "2024.07", "value": "30°C" },
+                { "date": "2024.08", "value": "29°C" },
+                { "date": "2024.09", "value": "22°C" },
+                { "date": "2024.10", "value": "16°C" }
+              ]
+            },
+            {
+              "item": "Aerosols",
+              "value": [
+                { "date": "2024.01", "value": "Low" },
+                { "date": "2024.02", "value": "Low" },
+                { "date": "2024.03", "value": "Medium" },
+                { "date": "2024.04", "value": "Medium" },
+                { "date": "2024.05", "value": "High" },
+                { "date": "2024.06", "value": "High" },
+                { "date": "2024.07", "value": "Very High" },
+                { "date": "2024.08", "value": "High" },
+                { "date": "2024.09", "value": "Medium" },
+                { "date": "2024.10", "value": "Low" }
+              ]
+            },
+            {
+              "item": "Barometric Pressures",
+              "value": [
+                { "date": "2024.01", "value": "1015 hPa" },
+                { "date": "2024.02", "value": "1013 hPa" },
+                { "date": "2024.03", "value": "1012 hPa" },
+                { "date": "2024.04", "value": "1014 hPa" },
+                { "date": "2024.05", "value": "1016 hPa" },
+                { "date": "2024.06", "value": "1018 hPa" },
+                { "date": "2024.07", "value": "1017 hPa" },
+                { "date": "2024.08", "value": "1015 hPa" },
+                { "date": "2024.09", "value": "1013 hPa" },
+                { "date": "2024.10", "value": "1014 hPa" }
+              ]
+            },
+            {
+              "item": "Barometric Pressure Noons",
+              "value": [
+                { "date": "2024.01", "value": "1016 hPa" },
+                { "date": "2024.02", "value": "1014 hPa" },
+                { "date": "2024.03", "value": "1013 hPa" },
+                { "date": "2024.04", "value": "1015 hPa" },
+                { "date": "2024.05", "value": "1017 hPa" },
+                { "date": "2024.06", "value": "1019 hPa" },
+                { "date": "2024.07", "value": "1018 hPa" },
+                { "date": "2024.08", "value": "1016 hPa" },
+                { "date": "2024.09", "value": "1014 hPa" },
+                { "date": "2024.10", "value": "1015 hPa" }
+              ]
+            },
+            {
+              "item": "Clouds",
+              "value": [
+                { "date": "2024.01", "value": "Overcast" },
+                { "date": "2024.02", "value": "Cloudy" },
+                { "date": "2024.03", "value": "Partly Cloudy" },
+                { "date": "2024.04", "value": "Clear" },
+                { "date": "2024.05", "value": "Clear" },
+                { "date": "2024.06", "value": "Partly Cloudy" },
+                { "date": "2024.07", "value": "Mostly Cloudy" },
+                { "date": "2024.08", "value": "Cloudy" },
+                { "date": "2024.09", "value": "Overcast" },
+                { "date": "2024.10", "value": "Clear" }
+              ]
+            },
+            {
+              "item": "Clouds Noons",
+              "value": [
+                { "date": "2024.01", "value": "Overcast" },
+                { "date": "2024.02", "value": "Cloudy" },
+                { "date": "2024.03", "value": "Partly Cloudy" },
+                { "date": "2024.04", "value": "Clear" },
+                { "date": "2024.05", "value": "Clear" },
+                { "date": "2024.06", "value": "Partly Cloudy" },
+                { "date": "2024.07", "value": "Mostly Cloudy" },
+                { "date": "2024.08", "value": "Cloudy" },
+                { "date": "2024.09", "value": "Overcast" },
+                { "date": "2024.10", "value": "Clear" }
+              ]
+            },
+            {
+              "item": "Precipitation",
+              "value": [
+                { "date": "2024.01", "value": "50 mm" },
+                { "date": "2024.02", "value": "40 mm" },
+                { "date": "2024.03", "value": "60 mm" },
+                { "date": "2024.04", "value": "70 mm" },
+                { "date": "2024.05", "value": "80 mm" },
+                { "date": "2024.06", "value": "90 mm" },
+                { "date": "2024.07", "value": "100 mm" },
+                { "date": "2024.08", "value": "95 mm" },
+                { "date": "2024.09", "value": "85 mm" },
+                { "date": "2024.10", "value": "75 mm" }
+              ]
+            },
+            {
+              "item": "Precipitation Monthlies",
+              "value": [
+                { "date": "2024.01", "value": "45 mm" },
+                { "date": "2024.02", "value": "35 mm" },
+                { "date": "2024.03", "value": "55 mm" },
+                { "date": "2024.04", "value": "65 mm" },
+                { "date": "2024.05", "value": "75 mm" },
+                { "date": "2024.06", "value": "85 mm" },
+                { "date": "2024.07", "value": "95 mm" },
+                { "date": "2024.08", "value": "90 mm" },
+                { "date": "2024.09", "value": "80 mm" },
+                { "date": "2024.10", "value": "70 mm" }
+              ]
+            }
+          ]
+        },
+        {
+          "protocol": "biosphere",
+          "protocol_data": [
+            {
+              "item": "Graminoid Biomasses",
+              "value": [
+                { "date": "2024.01", "value": "500 kg/ha" },
+                { "date": "2024.02", "value": "520 kg/ha" },
+                { "date": "2024.03", "value": "530 kg/ha" },
+                { "date": "2024.04", "value": "540 kg/ha" },
+                { "date": "2024.05", "value": "550 kg/ha" },
+                { "date": "2024.06", "value": "560 kg/ha" },
+                { "date": "2024.07", "value": "570 kg/ha" },
+                { "date": "2024.08", "value": "580 kg/ha" },
+                { "date": "2024.09", "value": "590 kg/ha" },
+                { "date": "2024.10", "value": "600 kg/ha" }
+              ]
+            },
+            {
+              "item": "Biometry - Trees",
+              "value": [
+                { "date": "2024.01", "value": "1500 trees/ha" },
+                { "date": "2024.02", "value": "1520 trees/ha" },
+                { "date": "2024.03", "value": "1540 trees/ha" },
+                { "date": "2024.04", "value": "1560 trees/ha" },
+                { "date": "2024.05", "value": "1580 trees/ha" },
+                { "date": "2024.06", "value": "1600 trees/ha" },
+                { "date": "2024.07", "value": "1620 trees/ha" },
+                { "date": "2024.08", "value": "1640 trees/ha" },
+                { "date": "2024.09", "value": "1660 trees/ha" },
+                { "date": "2024.10", "value": "1680 trees/ha" }
+              ]
+            },
+            {
+              "item": "Biometry - Tree Heights",
+              "value": [
+                { "date": "2024.01", "value": "10 m" },
+                { "date": "2024.02", "value": "10.2 m" },
+                { "date": "2024.03", "value": "10.4 m" },
+                { "date": "2024.04", "value": "10.6 m" },
+                { "date": "2024.05", "value": "10.8 m" },
+                { "date": "2024.06", "value": "11 m" },
+                { "date": "2024.07", "value": "11.2 m" },
+                { "date": "2024.08", "value": "11.4 m" },
+                { "date": "2024.09", "value": "11.6 m" },
+                { "date": "2024.10", "value": "11.8 m" }
+              ]
+            },
+            {
+              "item": "Biometry - Vegetation Covers",
+              "value": [
+                { "date": "2024.01", "value": "30%" },
+                { "date": "2024.02", "value": "32%" },
+                { "date": "2024.03", "value": "34%" },
+                { "date": "2024.04", "value": "36%" },
+                { "date": "2024.05", "value": "38%" },
+                { "date": "2024.06", "value": "40%" },
+                { "date": "2024.07", "value": "42%" },
+                { "date": "2024.08", "value": "44%" },
+                { "date": "2024.09", "value": "46%" },
+                { "date": "2024.10", "value": "48%" }
+              ]
+            },
+            {
+              "item": "Greenings",
+              "value": [
+                { "date": "2024.01", "value": "Low" },
+                { "date": "2024.02", "value": "Low" },
+                { "date": "2024.03", "value": "Medium" },
+                { "date": "2024.04", "value": "Medium" },
+                { "date": "2024.05", "value": "High" },
+                { "date": "2024.06", "value": "High" },
+                { "date": "2024.07", "value": "Very High" },
+                { "date": "2024.08", "value": "High" },
+                { "date": "2024.09", "value": "Medium" },
+                { "date": "2024.10", "value": "Low" }
+              ]
+            },
+            {
+              "item": "Land Cover",
+              "value": [
+                { "date": "2024.01", "value": "Forest: 40%" },
+                { "date": "2024.02", "value": "Forest: 41%" },
+                { "date": "2024.03", "value": "Forest: 42%" },
+                { "date": "2024.04", "value": "Forest: 43%" },
+                { "date": "2024.05", "value": "Forest: 44%" },
+                { "date": "2024.06", "value": "Forest: 45%" },
+                { "date": "2024.07", "value": "Forest: 46%" },
+                { "date": "2024.08", "value": "Forest: 47%" },
+                { "date": "2024.09", "value": "Forest: 48%" },
+                { "date": "2024.10", "value": "Forest: 49%" }
+              ]
+            },
+            {
+              "item": "Phenological Gardens",
+              "value": [
+                { "date": "2024.01", "value": "Dormant" },
+                { "date": "2024.02", "value": "Dormant" },
+                { "date": "2024.03", "value": "Budding" },
+                { "date": "2024.04", "value": "Flowering" },
+                { "date": "2024.05", "value": "Full Bloom" },
+                { "date": "2024.06", "value": "Fruiting" },
+                { "date": "2024.07", "value": "Fruiting" },
+                { "date": "2024.08", "value": "Fruiting" },
+                { "date": "2024.09", "value": "Fruiting" },
+                { "date": "2024.10", "value": "Leaf Fall" }
+              ]
+            },
+            {
+              "item": "Carbon Cycle",
+              "value": [
+                { "date": "2024.01", "value": "2000 Mg CO2/year" },
+                { "date": "2024.02", "value": "2050 Mg CO2/year" },
+                { "date": "2024.03", "value": "2100 Mg CO2/year" },
+                { "date": "2024.04", "value": "2150 Mg CO2/year" },
+                { "date": "2024.05", "value": "2200 Mg CO2/year" },
+                { "date": "2024.06", "value": "2250 Mg CO2/year" },
+                { "date": "2024.07", "value": "2300 Mg CO2/year" },
+                { "date": "2024.08", "value": "2350 Mg CO2/year" },
+                { "date": "2024.09", "value": "2400 Mg CO2/year" },
+                { "date": "2024.10", "value": "2450 Mg CO2/year" }
+              ]
+            }
+          ]
+        },
+        {
+          "protocol": "hydrosphere",
+          "protocol_data": [
+            {
+              "item": "Alkalinity",
+              "value": [
+                { "date": "2024.01", "value": "120 mg/L" },
+                { "date": "2024.02", "value": "118 mg/L" },
+                { "date": "2024.03", "value": "115 mg/L" },
+                { "date": "2024.04", "value": "113 mg/L" },
+                { "date": "2024.05", "value": "110 mg/L" },
+                { "date": "2024.06", "value": "108 mg/L" },
+                { "date": "2024.07", "value": "105 mg/L" },
+                { "date": "2024.08", "value": "103 mg/L" },
+                { "date": "2024.09", "value": "100 mg/L" },
+                { "date": "2024.10", "value": "98 mg/L" }
+              ]
+            },
+            {
+              "item": "Conductivity",
+              "value": [
+                { "date": "2024.01", "value": "500 µS/cm" },
+                { "date": "2024.02", "value": "505 µS/cm" },
+                { "date": "2024.03", "value": "510 µS/cm" },
+                { "date": "2024.04", "value": "515 µS/cm" },
+                { "date": "2024.05", "value": "520 µS/cm" },
+                { "date": "2024.06", "value": "525 µS/cm" },
+                { "date": "2024.07", "value": "530 µS/cm" },
+                { "date": "2024.08", "value": "535 µS/cm" },
+                { "date": "2024.09", "value": "540 µS/cm" },
+                { "date": "2024.10", "value": "545 µS/cm" }
+              ]
+            },
+            {
+              "item": "Dissolved Oxygen",
+              "value": [
+                { "date": "2024.01", "value": "8 mg/L" },
+                { "date": "2024.02", "value": "8.2 mg/L" },
+                { "date": "2024.03", "value": "8.4 mg/L" },
+                { "date": "2024.04", "value": "8.6 mg/L" },
+                { "date": "2024.05", "value": "8.8 mg/L" },
+                { "date": "2024.06", "value": "9 mg/L" },
+                { "date": "2024.07", "value": "9.2 mg/L" },
+                { "date": "2024.08", "value": "9.4 mg/L" },
+                { "date": "2024.09", "value": "9.6 mg/L" },
+                { "date": "2024.10", "value": "9.8 mg/L" }
+              ]
+            },
+            {
+              "item": "Freshwater Macroinvertebrates",
+              "value": [
+                { "date": "2024.01", "value": "High Diversity" },
+                { "date": "2024.02", "value": "High Diversity" },
+                { "date": "2024.03", "value": "Medium Diversity" },
+                { "date": "2024.04", "value": "Medium Diversity" },
+                { "date": "2024.05", "value": "Low Diversity" },
+                { "date": "2024.06", "value": "Low Diversity" },
+                { "date": "2024.07", "value": "Low Diversity" },
+                { "date": "2024.08", "value": "Medium Diversity" },
+                { "date": "2024.09", "value": "Medium Diversity" },
+                { "date": "2024.10", "value": "High Diversity" }
+              ]
+            },
+            {
+              "item": "Mosquito Habitat Mapper",
+              "value": [
+                { "date": "2024.01", "value": "Low Activity" },
+                { "date": "2024.02", "value": "Low Activity" },
+                { "date": "2024.03", "value": "Moderate Activity" },
+                { "date": "2024.04", "value": "Moderate Activity" },
+                { "date": "2024.05", "value": "High Activity" },
+                { "date": "2024.06", "value": "High Activity" },
+                { "date": "2024.07", "value": "Very High Activity" },
+                { "date": "2024.08", "value": "High Activity" },
+                { "date": "2024.09", "value": "Moderate Activity" },
+                { "date": "2024.10", "value": "Low Activity" }
+              ]
+            },
+            {
+              "item": "Nitrates",
+              "value": [
+                { "date": "2024.01", "value": "5 mg/L" },
+                { "date": "2024.02", "value": "5.2 mg/L" },
+                { "date": "2024.03", "value": "5.4 mg/L" },
+                { "date": "2024.04", "value": "5.6 mg/L" },
+                { "date": "2024.05", "value": "5.8 mg/L" },
+                { "date": "2024.06", "value": "6 mg/L" },
+                { "date": "2024.07", "value": "6.2 mg/L" },
+                { "date": "2024.08", "value": "6.4 mg/L" },
+                { "date": "2024.09", "value": "6.6 mg/L" },
+                { "date": "2024.10", "value": "6.8 mg/L" }
+              ]
+            },
+            {
+              "item": "pH",
+              "value": [
+                { "date": "2024.01", "value": "7.0" },
+                { "date": "2024.02", "value": "7.1" },
+                { "date": "2024.03", "value": "7.2" },
+                { "date": "2024.04", "value": "7.3" },
+                { "date": "2024.05", "value": "7.4" },
+                { "date": "2024.06", "value": "7.5" },
+                { "date": "2024.07", "value": "7.6" },
+                { "date": "2024.08", "value": "7.5" },
+                { "date": "2024.09", "value": "7.4" },
+                { "date": "2024.10", "value": "7.3" }
+              ]
+            },
+            {
+              "item": "Salinity",
+              "value": [
+                { "date": "2024.01", "value": "30 PSU" },
+                { "date": "2024.02", "value": "31 PSU" },
+                { "date": "2024.03", "value": "32 PSU" },
+                { "date": "2024.04", "value": "33 PSU" },
+                { "date": "2024.05", "value": "34 PSU" },
+                { "date": "2024.06", "value": "35 PSU" },
+                { "date": "2024.07", "value": "36 PSU" },
+                { "date": "2024.08", "value": "35 PSU" },
+                { "date": "2024.09", "value": "34 PSU" },
+                { "date": "2024.10", "value": "33 PSU" }
+              ]
+            },
+            {
+              "item": "Water Temperature",
+              "value": [
+                { "date": "2024.01", "value": "10°C" },
+                { "date": "2024.02", "value": "11°C" },
+                { "date": "2024.03", "value": "12°C" },
+                { "date": "2024.04", "value": "14°C" },
+                { "date": "2024.05", "value": "16°C" },
+                { "date": "2024.06", "value": "18°C" },
+                { "date": "2024.07", "value": "20°C" },
+                { "date": "2024.08", "value": "19°C" },
+                { "date": "2024.09", "value": "17°C" },
+                { "date": "2024.10", "value": "15°C" }
+              ]
+            },
+            {
+              "item": "Water Transparency",
+              "value": [
+                { "date": "2024.01", "value": "Clear" },
+                { "date": "2024.02", "value": "Clear" },
+                { "date": "2024.03", "value": "Moderate" },
+                { "date": "2024.04", "value": "Moderate" },
+                { "date": "2024.05", "value": "Low" },
+                { "date": "2024.06", "value": "Low" },
+                { "date": "2024.07", "value": "Very Low" },
+                { "date": "2024.08", "value": "Low" },
+                { "date": "2024.09", "value": "Moderate" },
+                { "date": "2024.10", "value": "Clear" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+]

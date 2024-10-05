@@ -34,6 +34,7 @@ export default function PlayPage() {
       }
 
       const data = await response.json();
+      Cookies.set('countryName', data.countryName);
       setData(data); // Update the state with the response data
       console.log('Response data:', data);
     } catch (error) {
@@ -41,10 +42,34 @@ export default function PlayPage() {
     }
   };
 
+  const handleGenerateIssue = async () => {
+    // Get countryId from cookies
+    const countryId = Cookies.get('countryId'); // Replace 'countryId' with your actual cookie name
+    console.log('Loaded countryId:', countryId);
+    const countryName = Cookies.get('countryName');
+    try {
+      const response = await fetch('/api/issue', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ countryName: countryName }), // Send
+      });
+    } catch (error) {
+      console.error('Error while fetching country:', error);
+    }
+  }
+
   // Use an effect to run the handler when the component mounts
   useEffect(() => {
     handleMapLoad();
   }, []); // Empty dependency array ensures this runs only once when the component mounts
+
+  useEffect(() => {
+    if(data !== null){
+      handleGenerateIssue();
+    }
+  }, [data]);
 
   return (
     <div>
