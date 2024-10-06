@@ -246,15 +246,15 @@ export default function CustomMap({ mapData, generatedIssue, handleSubmitIssue, 
                             <h3><strong>Multiplayer Leaderboard:</strong></h3>
 
                             <div className="flex justify-between items-center">
-                                <h4>USA</h4>
+                                <h4>🇺🇸 USA</h4>
                                 <h5 className="text-sm">GDP: $1.2M | Crb. Emis.: 23</h5>
                             </div>
                             <div className="flex justify-between items-center">
-                                <h4>USA</h4>
+                                <h4>🇬🇧 UK</h4>
                                 <h5 className="text-sm">GDP: $1.2M | Crb. Emis.: 23</h5>
                             </div>
                             <div className="flex justify-between items-center">
-                                <h4>USA</h4>
+                                <h4>🇨🇦 Canada</h4>
                                 <h5 className="text-sm">GDP: $1.2M | Crb. Emis.: 23</h5>
                             </div>
                 
