@@ -278,7 +278,7 @@ export default function CustomMap({ mapData, generatedIssue, handleSubmitIssue, 
                         {generatedIssue ? (
                             generatedIssue[AddressingIssues].debate_solution.map((debate, index) => (
                                 <div className="flex justify-between items-center gap-4" key={debate.id || index}>
-                                    <h4 className="text-md">{debate.solution}</h4>
+                                    <h4 className="text-sm">{debate.solution}</h4>
                                     <Button onClick={() => handleSubmitAdress(AddressingIssues, index)}>Approve</Button>
                                 </div>
                             ))
@@ -311,7 +311,7 @@ export default function CustomMap({ mapData, generatedIssue, handleSubmitIssue, 
 
                         <h2 className="text-sm mt-8">Effect Modifier</h2>
                         <p className="text-sm">Public Sentiment: {generatedNews[news].public_opinion[0].sentiment}</p>
-                        <p className="text-sm">Modifier:</p>
+                        <p className="text-sm">Public Modifier:</p>
                         {generatedNews[news].public_opinion[0].modifier_to_country.map((modifier, index) => (
                             <div className="flex justify-start gap-5 items-center" key={index}>
                                 <p className="text-sm">{modifier.protocol_item}</p>
