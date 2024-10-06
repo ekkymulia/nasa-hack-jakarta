@@ -210,7 +210,7 @@ export default function CustomMap({ mapData, generatedIssue, handleSubmitIssue, 
                         </div>
                     </div>
 
-                    <div style={{ position: 'absolute', zIndex: 1, top: 400, left: 20, width: '350px', backgroundColor: 'white', borderRadius: '8px', padding: '19px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+                    <div style={{ position: 'absolute', zIndex: 1, top: 330, left: 30, width: '350px', backgroundColor: 'white', borderRadius: '8px', padding: '19px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
                         <div >
                         <div className="flex flex-col gap-4 text-lg">
                             <h3><strong>USA News:</strong></h3>
