@@ -4,6 +4,7 @@ import path from 'path';
 import { ChatOpenAI } from "@langchain/openai";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { RunnableSequence } from "@langchain/core/runnables";
+import { base_nasa } from './baseNasaData';
 
 const prisma = new PrismaClient();
 
@@ -15,21 +16,21 @@ const corsHeaders = {
 };
 
 // Function to load base countries asynchronously
-const loadBaseCountries = async () => {
-    const filePath = path.join(process.cwd(), 'src/app/api/issue/baseNasaData.json');
+// const loadBaseCountries = async () => {
+//     const filePath = path.join(process.cwd(), 'src/app/api/issue/baseNasaData.json');
     
-    try {
-        const data = await fs.readFile(filePath, 'utf8');
-        return JSON.parse(data);
-    } catch (error) {
-        console.error('Error reading baseCountry.json:', error);
-        throw new Error('Could not load country data');
-    }
-};
+//     try {
+//         const data = await fs.readFile(filePath, 'utf8');
+//         return JSON.parse(data);
+//     } catch (error) {
+//         console.error('Error reading baseCountry.json:', error);
+//         throw new Error('Could not load country data');
+//     }
+// };
 
 export const countryOverview = async (countryName) => {
     try {
-        const countries = await loadBaseCountries(); // Load the countries from the JSON file
+        const countries = base_nasa; // Load the countries from the JSON file
         const countryInfo = countries.find(
             country => country.countryName === countryName
         );

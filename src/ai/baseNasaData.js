@@ -1,4 +1,4 @@
-[{
+export const base_nasa = [{
   "countryName": "USA",
   "countryFlag": "🇺🇸",
   "gdpValue": 24000000000000,
