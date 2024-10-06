@@ -251,11 +251,11 @@ export default function CustomMap({ mapData, generatedIssue, handleSubmitIssue, 
                             </div>
                             <div className="flex justify-between items-center">
                                 <h4>🇬🇧 UK</h4>
-                                <h5 className="text-sm">GDP: $1.2M | Crb. Emis.: 23</h5>
+                                <h5 className="text-sm">Not Joined Yet</h5>
                             </div>
                             <div className="flex justify-between items-center">
                                 <h4>🇨🇦 Canada</h4>
-                                <h5 className="text-sm">GDP: $1.2M | Crb. Emis.: 23</h5>
+                                <h5 className="text-sm">Not Joined Yet</h5>
                             </div>
                 
                         </div>

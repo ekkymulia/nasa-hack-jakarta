@@ -63,7 +63,7 @@ const prompt = ChatPromptTemplate.fromMessages([
     [
             "news_outlet": "news_outlet",
             "news_headline": "news_headline, depends on the issue and action taken, choice of words could attack or defend the government or neutral",
-            "news_story": "news_story, 200-300 words",
+            "news_story": "news_story, 200-300 words, you could use Use latitude and longitude to determine the location, display the place name to the user without showing the actual coordinates but sometimes you could display it.",
             "public_opinion": [
                 "sentiment": "sentiment",
                 "modifier_to_country": [
