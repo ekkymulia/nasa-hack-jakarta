@@ -34,7 +34,7 @@ export const countryOverview = async (countryName) => {
         const countryInfo = countries.find(
             country => country.countryName === countryName
         );
-        console.log(countries, countryName, 'sdfsfs');
+        // console.log(countries, countryName, 'sdfsfs');
         
         if (countryInfo) {
         } else {
@@ -92,10 +92,10 @@ const runnableAgent = RunnableSequence.from([
 export const issuemaker = async (country_data, addressed_issue) => {
     try {
         const result = await runnableAgent.invoke({ country_data, addressed_issue });
-        console.log(result.content); // Log the result content
+        // console.log(result.content); // Log the result content
         return result.content;
     } catch (error) {
-        console.error(`Error generating issues: ${error.message}`);
+        // console.error(`Error generating issues: ${error.message}`);
         throw error;
     }
 };  
