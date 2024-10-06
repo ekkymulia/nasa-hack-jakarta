@@ -61,7 +61,7 @@ const model = new ChatOpenAI({
 const prompt = ChatPromptTemplate.fromMessages([
     ["system", `Use JSON data below to identify issues that might happen in a country. Provide 3 issues in the response in the following JSON format: 
     [
-            "issue": "issue1, use lat long but tell user where is that but do not show the lat long, and other data to provide a more specific issue",
+            "issue": "issue1,Use latitude and longitude to determine the location, display the place name to the user without showing the actual coordinates but sometimes you could display it. and other data to provide a more specific issue",
             "issue_story": "issue_story, sometime could be direct or indirect like an opinion story, tell a background first or the history of the problem, then slow to the problem",
             "debate_solution": [
                 "solution": "solution, create the text as if it was a story suggested by the government underlings",
