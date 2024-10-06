@@ -58,28 +58,19 @@ const model = new ChatOpenAI({
 });
 
 const prompt = ChatPromptTemplate.fromMessages([
-    ["system", `Use JSON data below to identify issues that might happen in a country. Provide 3 issues in the response in the following JSON format: 
+    ["system", `Use JSON data below to make a news of issue and steps that have been tooken that happen in a country. Provide 3 news in the response in the following JSON format: 
     [
-            "issue": "issue1",
-            "issue_story": "issue_story, sometime could be direct or indirect like an opinion story, tell a background first or the history of the problem, then slow to the problem",
-            "debate_solution": [
-                "solution": "solution, create the text as if it was a story suggested by the government underlings",
+            "news_outlet": "news_outlet",
+            "news_headline": "news_headline, depends on the issue and action taken, choice of words could attack or defend the government or neutral",
+            "news_story": "news_story, 200-300 words",
+            "public_opinion": [
+                "sentiment": "sentiment",
                 "modifier_to_country": [
-                        "protocol_item": "protocol_item",
-                        "value_affected": "value_affected"
-                ]
-            ] make 3-4 solutions but some good and some bad and some maybe mediocre
-    ]
-    the issue could be 
-    Climate Events: Use Atmosphere datasets like Air Temperature Dailies, Precipitation, and Winds to generate weather-related events (e.g., heatwaves, hurricanes, droughts).
-    Environmental Policies: Leverage Biosphere and Hydrosphere data (e.g., Carbon Cycle, Water Quality) to create events around deforestation, pollution, and conservation efforts.
-    Public Health Crises: Utilize Hydrosphere datasets like Mosquito Habitat Mapper and Dissolved Oxygen to generate events related to disease outbreaks or water quality issues.
-    Economic Policies: Barometric Pressures and Air Temperature data can influence economic indicators like agriculture output and energy consumption.
-    Infrastructure Development: Soil Moisture and Soil Temperature datasets can affect building projects, urban planning, and disaster resilience.
-
-    Or Adaptive Event Creation
-    Storyline Development: AI crafts narratives around data trends, such as urban expansion impacting Vegetation Covers or industrial growth affecting Water Quality.
-    `],
+                    "public_modifier_item": "what is it effecting for the public (e.g. economy, health, etc.)",
+                    "value_affected": "value_affected"
+                ] make 2-3 public modifier items
+            ]
+    ]`],
     ["human", "Country Data: {country_data}. Addressed Issues Before: {addressed_issue}"],
 ]);
 
@@ -88,7 +79,7 @@ const runnableAgent = RunnableSequence.from([
     model,
 ]);
 
-export const issuemaker = async (country_data, addressed_issue) => {
+export const newsmaker = async (country_data, addressed_issue) => {
     try {
         const result = await runnableAgent.invoke({ country_data, addressed_issue });
         console.log(result.content); // Log the result content
@@ -97,4 +88,6 @@ export const issuemaker = async (country_data, addressed_issue) => {
         console.error(`Error generating issues: ${error.message}`);
         throw error;
     }
-};  
+};
+
+

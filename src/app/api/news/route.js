@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'; 
 import { PrismaClient } from '@prisma/client'
 import { countryOverview, issuemaker } from '@/ai/issueMaker';
+import { newsmaker } from '@/ai/newsMaker';
 
 const prisma = new PrismaClient();
 
@@ -25,7 +26,7 @@ export async function POST(request) {
         });
 
         const co = await countryOverview(countryName);
-        const country_issue = await issuemaker(co, country);
+        const country_issue = await newsmaker(co, country);
 
         function removeFirstAndLastLine(text) {
             const lines = text.split('\n'); // Split the string into an array of lines

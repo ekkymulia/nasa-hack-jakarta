@@ -6,6 +6,8 @@ import Cookies from 'js-cookie'; // Ensure you have js-cookie installed
 
 export default function PlayPage() {
   const [data, setData] = useState(null);
+  const [generatedIssue, setGeneratedIssue] = useState(null);
+  const [generatedNews, setGeneratedNews] = useState(null);
   const Map = useMemo(() => dynamic(
     () => import('@/components/maps/playmap'), // Import the Map component dynamically
     { 
@@ -53,8 +55,56 @@ export default function PlayPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ countryName: countryName }), // Send
+        body: JSON.stringify({ countryName: countryName, countryId: countryId }), // Send
       });
+
+      const data = await response.json();
+      setGeneratedIssue(data);
+      console.log(data)
+
+    } catch (error) {
+      console.error('Error while fetching country:', error);
+    }
+  }
+
+  const handleGenerateNews = async () => {
+    // Get countryId from cookies
+    const countryId = Cookies.get('countryId'); // Replace 'countryId' with your actual cookie name
+    console.log('Loaded countryId:', countryId);
+    const countryName = Cookies.get('countryName');
+    try {
+      const response = await fetch('/api/news', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ countryName: countryName, countryId: countryId }), // Send
+      });
+
+      const data = await response.json();
+      setGeneratedNews(data);
+      console.log(data)
+
+    } catch (error) {
+      console.error('Error while fetching country:', error);
+    }
+  }
+
+  const handleSubmitIssue = async (issue, solution) => {
+    // Get countryId from cookies
+    const countryId = Cookies.get('countryId'); // Replace 'countryId' with your actual cookie name
+
+    try {
+      const response = await fetch('/api/issue/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ issue: issue, choosen_solution: solution, countryId: countryId }), // Send
+      });
+
+      const data = await response.json();
+      console.log(data)
     } catch (error) {
       console.error('Error while fetching country:', error);
     }
@@ -71,9 +121,15 @@ export default function PlayPage() {
     }
   }, [data]);
 
+  useEffect(() => {
+    if(generatedIssue !== null){
+      handleGenerateNews();
+    }
+  }, [generatedIssue]);
+
   return (
     <div>
-      <Map onLoad={handleMapLoad} mapData={data} /> {/* Pass the handler to the Map component if needed */}
+      <Map onLoad={handleMapLoad} mapData={data} generatedIssue={generatedIssue} handleSubmitIssue={handleSubmitIssue} generatedNews={generatedNews} /> {/* Pass the handler to the Map component if needed */}
     </div>
   );
 }

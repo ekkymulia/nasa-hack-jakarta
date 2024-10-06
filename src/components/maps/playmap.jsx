@@ -23,21 +23,36 @@ const ChangeView = ({ position, zoom }) => {
   return null;
 };
 
-export default function CustomMap({ mapData }) {
+export default function CustomMap({ mapData, generatedIssue, handleSubmitIssue, generatedNews }) {
   const [position, setPosition] = useState(countryCoordinates['usa']); // Default to USA coordinates
   const [zoom, setZoom] = useState(5); // Set an appropriate zoom level
   const [selectedCountry, setSelectedCountry] = useState('USA'); // Default country text
 
   //functionality
   const [isAddressing, setIsAddressing] = useState(false);
+  const [AddressingIssues, setAddressingIssues] = useState(null)
   const [isReading, setIsReading] = useState(false);
+  const [news, setNews] = useState(null);
 
-    const handleIsReading = () => {
+    const handleIsReading = (index) => {
+        setNews(index)
         setIsReading(!isReading);
     }
 
-    const handleIsAddressing = () => {
+    const handleIsAddressing = (index) => {
+        setAddressingIssues(index)
         setIsAddressing(!isAddressing);
+    }
+
+    const handleSubmitAdress = (issueIndex, solutionIndex) => {
+        console.log('Issue Index:', issueIndex, 'Solution Index:', solutionIndex)
+
+        const submit = handleSubmitIssue(generatedIssue[issueIndex], generatedIssue[AddressingIssues].debate_solution[solutionIndex])
+        if(submit) {
+            setIsAddressing(false);
+            window.location.reload(); 
+        }
+
     }
 
     const handleApprove = () => {
@@ -173,51 +188,53 @@ export default function CustomMap({ mapData }) {
                         <div >
                         <div className="flex flex-col gap-4 text-lg">
                             <h3><strong>Current Nation Issues:</strong></h3>
+                            {generatedIssue ? (
+                                generatedIssue.map((issue, index) => (
+                                    <div className="flex justify-between" key={index}>
+                                        <h4>{issue.issue}</h4>
+                                        <Button onClick={() => handleIsAddressing(index)}>Address</Button>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className="flex items-center">
+                                    <svg className="animate-bounce h-5 w-5 mr-3" viewBox="0 0 24 24">
+                                        <circle className="text-gray-200" cx="12" cy="12" r="10" strokeWidth="4" fill="none" />
+                                        <path className="text-blue-500" fill="currentColor" d="M4 12a8 8 0 1 0 16 0A8 8 0 0 0 4 12z" />
+                                    </svg>
+                                    <span>Collecting people aspirations...</span>
+                                </div>
+                            )}
 
-                            <div className="flex justify-between">
-                                <h4>Climate Change</h4>
-                                <Button onClick={handleIsAddressing}>Adress</Button>
-                            </div>
-                            <div className="flex justify-between">
-                                <h4>Climate Change</h4>
-                                <Button>Adress</Button>
-                            </div>
-                            <div className="flex justify-between">
-                                <h4>Climate Change</h4>
-                                <Button>Adress</Button>
-                            </div>
+                          
                         </div>
                         </div>
                     </div>
 
-                    <div style={{ position: 'absolute', zIndex: 1, top: 350, left: 20, width: '350px', backgroundColor: 'white', borderRadius: '8px', padding: '19px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+                    <div style={{ position: 'absolute', zIndex: 1, top: 400, left: 20, width: '350px', backgroundColor: 'white', borderRadius: '8px', padding: '19px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
                         <div >
                         <div className="flex flex-col gap-4 text-lg">
                             <h3><strong>USA News:</strong></h3>
 
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <span className="text-sm text-slate-700">American Headlines</span>
-                                    <h4 className="text-md">Climate Change</h4>
+                            {generatedNews ? (
+                                generatedNews.map((news, index) => (
+                                    <div className="flex justify-between items-end gap-3" key={index}>
+                                        <div>
+                                            <span className="text-sm text-slate-700">{news.news_outlet}</span>
+                                            <h4 className="text-sm">{news.news_headline}</h4>
+                                        </div>
+                                        <Button onClick={() => handleIsReading(index)}>Read</Button>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className="flex items-center">
+                                    <svg className="animate-bounce h-5 w-5 mr-3" viewBox="0 0 24 24">
+                                        <circle className="text-gray-200" cx="12" cy="12" r="10" strokeWidth="4" fill="none" />
+                                        <path className="text-blue-500" fill="currentColor" d="M4 12a8 8 0 1 0 16 0A8 8 0 0 0 4 12z" />
+                                    </svg>
+                                    <span>Going to the news stand real quick...</span>
                                 </div>
-                                <Button onClick={handleIsReading}>Read</Button>
-                            </div>
-                            
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <span className="text-sm text-slate-700">American Headlines</span>
-                                    <h4 className="text-md">Climate Change</h4>
-                                </div>
-                                <Button>Read</Button>
-                            </div>
-                            
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <span className="text-sm text-slate-700">American Headlines</span>
-                                    <h4 className="text-md">Climate Change</h4>
-                                </div>
-                                <Button>Read</Button>
-                            </div>
+                            )}
+
                             
                         </div>
                         </div>
@@ -254,24 +271,27 @@ export default function CustomMap({ mapData }) {
                     <div>
                     <div className="flex flex-col gap-4 text-3xl p-4">
                                 {/* Country flag */}
-                        <h2>Judul Adress</h2>
-                        <p className="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ipsa cum enim autem. Dolorem, rem nisi deleniti sint provident commodi earum tempora ipsa. Rerum aperiam neque blanditiis libero autem exercitationem.</p>
+                        <h2>{ generatedIssue && generatedIssue[AddressingIssues].issue }</h2>
+                        <p className="text-sm">{ generatedIssue && generatedIssue[AddressingIssues].issue_story }</p>
 
                         <h2 className="text-sm mt-8">The Debate</h2>
-                        <div className="flex flex-col justify-between items-end">
-                            <div>
-                                <h4 className="text-md text-slate-700">American Headlines</h4>
-                                <p className="mt-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi sint quam ratione optio vero ut hic quas, magni numquam dolores rerum, voluptatum tenetur perspiciatis in qui non vel soluta.</p>
+                        {generatedIssue ? (
+                            generatedIssue[AddressingIssues].debate_solution.map((debate, index) => (
+                                <div className="flex justify-between items-center gap-4" key={debate.id || index}>
+                                    <h4 className="text-md">{debate.solution}</h4>
+                                    <Button onClick={() => handleSubmitAdress(AddressingIssues, index)}>Approve</Button>
+                                </div>
+                            ))
+                        ) : (
+                            <div className="flex items-center">
+                                <svg className="animate-bounce h-5 w-5 mr-3" viewBox="0 0 24 24">
+                                    <circle className="text-gray-200" cx="12" cy="12" r="10" strokeWidth="4" fill="none" />
+                                    <path className="text-blue-500" fill="currentColor" d="M4 12a8 8 0 1 0 16 0A8 8 0 0 0 4 12z" />
+                                </svg>
+                                <span>Discussing with the government bodies...</span>
                             </div>
-                            <Button className="mt-3" onClick={handleApprove}>Approve</Button>
-                        </div>
-                        <div className="flex flex-col justify-between items-end">
-                            <div>
-                                <h4 className="text-md text-slate-700">American Headlines</h4>
-                                <p className="mt-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque excepturi sint quam ratione optio vero ut hic quas, magni numquam dolores rerum, voluptatum tenetur perspiciatis in qui non vel soluta.</p>
-                            </div>
-                            <Button className="mt-3">Approve</Button>
-                        </div>
+                        )}
+
                     </div>
                     </div>
                 </div>
@@ -285,11 +305,19 @@ export default function CustomMap({ mapData }) {
                     <div>
                     <div className="flex flex-col gap-4 text-3xl p-4">
                                 {/* Country flag */}
-                        <h2 className="text-center">Judul Adress</h2>
-                        <p className="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ipsa cum enim autem. Dolorem, rem nisi deleniti sint provident commodi earum tempora ipsa. Rerum aperiam neque blanditiis libero autem exercitationem.</p>
+                        <h2 className="text-center text-sm">{ generatedNews[news].news_outlet }</h2>
+                        <h2 className="text-center text-md">{ generatedNews[news].news_headline }</h2>
+                        <p className="text-sm">{generatedNews[news].news_story}</p>
 
                         <h2 className="text-sm mt-8">Effect Modifier</h2>
-                   
+                        <p className="text-sm">Public Sentiment: {generatedNews[news].public_opinion[0].sentiment}</p>
+                        <p className="text-sm">Modifier:</p>
+                        {generatedNews[news].public_opinion[0].modifier_to_country.map((modifier, index) => (
+                            <div className="flex justify-start gap-5 items-center" key={index}>
+                                <p className="text-sm">{modifier.protocol_item}</p>
+                                <p className="text-sm">{modifier.value_affected}</p>
+                            </div>
+                        ))}
                      
 
                         <div className="flex flex-col justify-between items-end">

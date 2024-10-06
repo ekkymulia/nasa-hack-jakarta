@@ -6,7 +6,7 @@
   "carbonEmission": 20.0,
   "data_nasa_globe": [
     {
-      "latLng": "40.7128,-74.0060",
+      "latLng": ["40.7128,-74.0060"],
       "data": [
         {
           "protocol": "pedosphere",

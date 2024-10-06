@@ -16,29 +16,43 @@ export async function POST(request) {
         // Parse the request body as JSON
         const data = await request.json();
 
-        const { countryName, countryId } = data;
+        const { issue, choosen_solution, countryId } = data;
 
         const country = await prisma.country.findUnique({
             where: {
-                id: countryId,
+                id: data.countryId,
             },
         });
 
-        const co = await countryOverview(countryName);
-        const country_issue = await issuemaker(co, country);
+        const updatedCountry = await prisma.country.update({
+            where: {
+                id: countryId,
+            },
+            data: {
+                countryModifier: {
+                    ...(country.countryModifier || {}), // Spread existing data if any
+                    issue: issue, // Add new issue
+                    choosen_solution: choosen_solution, // Add chosen solution
+                },
+            },
+        });
 
-        function removeFirstAndLastLine(text) {
-            const lines = text.split('\n'); // Split the string into an array of lines
-            if (lines.length <= 2) {
-                return ''; // Return an empty string if there are less than 3 lines
-            }
-            return lines.slice(1, -1).join('\n'); // Remove the first and last lines, then join the remaining lines
-        }
 
-        const modifiedIssue = removeFirstAndLastLine(country_issue);
+        // const co = await countryOverview(countryName);
+        // const country_news = await newsmaker(co, []);
+
+        // function removeFirstAndLastLine(text) {
+        //     const lines = text.split('\n'); // Split the string into an array of lines
+        //     if (lines.length <= 2) {
+        //         return ''; // Return an empty string if there are less than 3 lines
+        //     }
+        //     return lines.slice(1, -1).join('\n'); // Remove the first and last lines, then join the remaining lines
+        // }
+
+        // const modifiedIssue = removeFirstAndLastLine(country_issue);
         
         // Return the created room as a response
-        return new Response(modifiedIssue, {
+        return new Response('ok', {
             status: 200,
             headers: corsHeaders,
         });
